@@ -1364,7 +1364,8 @@ CREATE DATABASE database_name [ COLLATE collation_name ]
 ```
 > [!IMPORTANT]
 > To add files or set containment for a database in a managed instance, use the [ALTER DATABASE](alter-database-transact-sql.md?tabs=sqldbmi) statement.
-> For managed instances, the initial MAXSIZE is implicitly set to the current disk size, and it doesn't change automatically when you extend the disk size from the Azure portal. After extending the disk, you should also extend MAXSIZE by [ALTER DATABASE](alter-database-transact-sql.md?tabs=sqldbmi) to avoid database file full errors.
+>
+> For SQL managed instances, the initial MAXSIZE is implicitly set to the current disk size, and it doesn't change automatically when you extend the disk size from the Azure portal. After extending the disk, you should also extend MAXSIZE with [ALTER DATABASE](alter-database-transact-sql.md?tabs=sqldbmi) to avoid database file full errors.
 
 ## Arguments
 
